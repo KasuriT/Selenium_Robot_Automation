@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-29T12:26:30.985859" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTC" source="C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases\LoginTC">
+<kw name="Before Each Test Suite" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-29T12:26:31.028744" level="INFO">Test Suite Started</msg>
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-29T12:26:31.028744" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:31.027745" elapsed="0.000999"/>
+</kw>
+<suite id="s1-s1" name="StartBrowser" source="C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases\LoginTC\StartBrowser.robot">
+<kw name="Before Each Test Suites" owner="Resources" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-29T12:26:31.248157" level="INFO">Before Each Test Suites</msg>
+<arg>Before Each Test Suites</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-29T12:26:31.248157" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:31.248157" elapsed="0.000000"/>
+</kw>
+<test id="s1-s1-t1" name="Start window with Robert Framework" line="14">
+<kw name="Start and Maximize Browsers" owner="Resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:31.250151" level="INFO">Opening browser 'chrome' to base url 'https://thetestingworld.com/testings/'.</msg>
+<arg>${userURL}</arg>
+<arg>${inputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-29T12:26:31.249156" elapsed="2.315900"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-29T12:26:33.566053" elapsed="0.615354"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>This keyword for start browser and maximize the window</doc>
+<status status="PASS" start="2024-10-29T12:26:31.249156" elapsed="2.932251"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:34.183402" level="INFO">Typing text 'Testingworld' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>Testingworld</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-29T12:26:34.182405" elapsed="0.219413"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:34.401818" level="INFO">Typing text 'testingworld@india.com' into text field 'name:fld_email'.</msg>
+<arg>name:fld_email</arg>
+<arg>testingworld@india.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-29T12:26:34.401818" elapsed="0.147053"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:34.549868" level="INFO">Typing password into text field 'name:fld_password'.</msg>
+<msg time="2024-10-29T12:26:34.583777" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:fld_password</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-29T12:26:34.549868" elapsed="0.109707"/>
+</kw>
+<kw name="Close Browser Window" owner="Resources" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:34.664561" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-29T12:26:34.660572" elapsed="0.003989"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-29T12:26:34.665559" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-29T12:26:34.664561" elapsed="0.000998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-29T12:26:34.665559" elapsed="2.354623"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:34.659575" elapsed="2.361509"/>
+</kw>
+<doc>This test case about registration and its functionalities</doc>
+<status status="PASS" start="2024-10-29T12:26:31.249156" elapsed="5.771928"/>
+</test>
+<test id="s1-s1-t2" name="Robot next test case" line="20">
+<kw name="Start and Maximize Browsers" owner="Resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:37.023073" level="INFO">Opening browser 'chrome' to base url 'https://thetestingworld.com/testings/'.</msg>
+<arg>${userURL}</arg>
+<arg>${inputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-29T12:26:37.023073" elapsed="2.067819"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-29T12:26:39.090892" elapsed="0.446806"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>This keyword for start browser and maximize the window</doc>
+<status status="PASS" start="2024-10-29T12:26:37.023073" elapsed="2.514625"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:39.539692" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<arg>add_type</arg>
+<arg>office</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-10-29T12:26:39.539692" elapsed="0.111702"/>
+</kw>
+<kw name="Close Browser Window" owner="Resources" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-10-29T12:26:39.659372" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-29T12:26:39.653388" elapsed="0.005984"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-29T12:26:39.660370" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-29T12:26:39.659372" elapsed="0.000998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-29T12:26:39.660370" elapsed="2.678232"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:39.653388" elapsed="2.685214"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:37.022077" elapsed="5.317520"/>
+</test>
+<kw name="After Each Test Suites" owner="Resources" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-29T12:26:42.344587" level="INFO">After Each Test Suites</msg>
+<arg>After Each Test Suites</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-29T12:26:42.344587" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:42.343591" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:31.028744" elapsed="11.316840"/>
+</suite>
+<suite id="s1-s2" name="StartBrowserTC02" source="C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases\LoginTC\StartBrowserTC02.robot">
+<test id="s1-s2-t1" name="Start window with Robert Framework" line="12">
+<kw name="Start and Maximize Browsers" type="SETUP">
+<msg time="2024-10-29T12:26:42.365523" level="FAIL">No keyword with name 'Start and Maximize Browsers' found.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="FAIL" start="2024-10-29T12:26:42.365523" elapsed="0.000000">No keyword with name 'Start and Maximize Browsers' found.</status>
+</kw>
+<kw name="Close Browser Window" type="TEARDOWN">
+<msg time="2024-10-29T12:26:42.368514" level="FAIL">No keyword with name 'Close Browser Window' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-10-29T12:26:42.368514" elapsed="0.000997">No keyword with name 'Close Browser Window' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<doc>This test case about registration and its functionalities</doc>
+<status status="FAIL" start="2024-10-29T12:26:42.360538" elapsed="0.011967">Setup failed:
+No keyword with name 'Start and Maximize Browsers' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser Window' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s2-t2" name="Robot next test case" line="18">
+<kw name="Start and Maximize Browsers" type="SETUP">
+<msg time="2024-10-29T12:26:42.380994" level="FAIL">No keyword with name 'Start and Maximize Browsers' found.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="FAIL" start="2024-10-29T12:26:42.380994" elapsed="0.000000">No keyword with name 'Start and Maximize Browsers' found.</status>
+</kw>
+<kw name="Close Browser Window" type="TEARDOWN">
+<msg time="2024-10-29T12:26:42.385535" level="FAIL">No keyword with name 'Close Browser Window' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-10-29T12:26:42.385535" elapsed="0.000000">No keyword with name 'Close Browser Window' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-10-29T12:26:42.375496" elapsed="0.010039">Setup failed:
+No keyword with name 'Start and Maximize Browsers' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser Window' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2024-10-29T12:26:42.349569" elapsed="0.037959"/>
+</suite>
+<kw name="After Each Test Suite" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-29T12:26:42.389037" level="INFO">Test Suite Ended</msg>
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-29T12:26:42.389037" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-29T12:26:42.389037" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-29T12:26:30.987852" elapsed="11.401185"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="2" skip="0" id="s1" name="LoginTC">LoginTC</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="StartBrowser">LoginTC.StartBrowser</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s2" name="StartBrowserTC02">LoginTC.StartBrowserTC02</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-29T12:26:42.357551" level="ERROR">Error in file 'C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases\LoginTC\StartBrowserTC02.robot' on line 3: Resource file '\Resources\Resources.robot' does not exist.</msg>
+</errors>
+</robot>

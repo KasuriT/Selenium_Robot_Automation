@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-30T06:13:25.183042" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases">
+<suite id="s1-s1" name="LoginTC" source="C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases\LoginTC">
+<kw name="Before Each Test Suite" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-30T06:13:25.228449" level="INFO">Test Suite Started</msg>
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-30T06:13:25.227413" elapsed="0.001036"/>
+</kw>
+<status status="PASS" start="2024-10-30T06:13:25.227413" elapsed="0.001036"/>
+</kw>
+<suite id="s1-s1-s1" name="StartBrowser" source="C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases\LoginTC\StartBrowser.robot">
+<kw name="Before Each Test Suites" owner="Resources" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-30T06:13:25.490672" level="INFO">Before Each Test Suites</msg>
+<arg>Before Each Test Suites</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-30T06:13:25.490672" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-30T06:13:25.489673" elapsed="0.000999"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Start window with Robert Framework" line="16">
+<kw name="Start and Maximize Browsers" owner="Resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T06:13:25.492666" level="INFO">Opening browser 'chrome' to base url 'https://thetestingworld.com/testings/'.</msg>
+<msg time="2024-10-30T06:18:57.607801" level="WARN">There was an error managing chromedriver (error decoding response body); using driver found in the cache</msg>
+<msg time="2024-10-30T06:19:00.206235" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-30T06:19:00.207330" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</msg>
+<arg>${userURL}</arg>
+<arg>${inputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-10-30T06:13:25.492666" elapsed="334.965888">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-10-30T06:19:00.459912" elapsed="0.000000"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>This keyword for start browser and maximize the window</doc>
+<status status="FAIL" start="2024-10-30T06:13:25.492666" elapsed="334.967882">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</status>
+</kw>
+<kw name="Close Browser Window" owner="Resources" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-10-30T06:19:00.472517" level="INFO">${Title} = thetestingworld.com</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-30T06:19:00.462543" elapsed="0.009974"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-30T06:19:00.473514" level="INFO">thetestingworld.com</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-30T06:19:00.472517" elapsed="0.000997"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-30T06:19:00.473514" elapsed="3.356633"/>
+</kw>
+<status status="PASS" start="2024-10-30T06:19:00.461547" elapsed="3.369598"/>
+</kw>
+<doc>This test case about registration and its functionalities</doc>
+<tag>ALL_TC</tag>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-10-30T06:13:25.491670" elapsed="338.339475">Setup failed:
+WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</status>
+</test>
+<test id="s1-s1-s1-t2" name="Robot next test case" line="23">
+<kw name="Start and Maximize Browsers" owner="Resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T06:19:03.841119" level="INFO">Opening browser 'chrome' to base url 'https://thetestingworld.com/testings/'.</msg>
+<msg time="2024-10-30T06:19:04.231392" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+<msg time="2024-10-30T06:19:06.235837" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-30T06:19:06.236167" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</msg>
+<arg>${userURL}</arg>
+<arg>${inputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-10-30T06:19:03.840122" elapsed="2.397042">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-10-30T06:19:06.238160" elapsed="0.000000"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>This keyword for start browser and maximize the window</doc>
+<status status="FAIL" start="2024-10-30T06:19:03.839126" elapsed="2.399034">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</status>
+</kw>
+<kw name="Close Browser Window" owner="Resources" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-10-30T06:19:06.249132" level="INFO">${Title} = thetestingworld.com</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-30T06:19:06.242151" elapsed="0.006981"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-30T06:19:06.249132" level="INFO">thetestingworld.com</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-30T06:19:06.249132" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-30T06:19:06.250129" elapsed="2.508151"/>
+</kw>
+<status status="PASS" start="2024-10-30T06:19:06.240156" elapsed="2.518124"/>
+</kw>
+<tag>ALL_TC</tag>
+<tag>sanity</tag>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-10-30T06:19:03.838129" elapsed="4.921142">Setup failed:
+WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E92D3AB5+28005]
+	(No symbol) [0x00007FF6E92383B0]
+	(No symbol) [0x00007FF6E90D580A]
+	(No symbol) [0x00007FF6E90D2F5F]
+	(No symbol) [0x00007FF6E90C3E49]
+	(No symbol) [0x00007FF6E90C5BE6]
+	(No symbol) [0x00007FF6E90C410F]
+	(No symbol) [0x00007FF6E90C39BD]
+	(No symbol) [0x00007FF6E90C38DA]
+	(No symbol) [0x00007FF6E90C151E]
+	(No symbol) [0x00007FF6E90C1DEC]
+	(No symbol) [0x00007FF6E90D88AA]
+	(No symbol) [0x00007FF6E916C6DE]
+	(No symbol) [0x00007FF6E914BA3A]
+	(No symbol) [0x00007FF6E916B8B3]
+	(No symbol) [0x00007FF6E914B7E3]
+	(No symbol) [0x00007FF6E91175C8]
+	(No symbol) [0x00007FF6E9118731]
+	GetHandleVerifier [0x00007FF6E95C643D+3118829]
+	GetHandleVerifier [0x00007FF6E9616C90+3448640]
+	GetHandleVerifier [0x00007FF6E960CF0D+3408317]
+	GetHandleVerifier [0x00007FF6E939A40B+841403]
+	(No symbol) [0x00007FF6E924340F]
+	(No symbol) [0x00007FF6E923F484]
+	(No symbol) [0x00007FF6E923F61D]
+	(No symbol) [0x00007FF6E922EB79]
+	BaseThreadInitThunk [0x00007FF8A27754E0+16]
+	RtlUserThreadStart [0x00007FF8A3AC485B+43]
+</status>
+</test>
+<kw name="After Each Test Suites" owner="Resources" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-30T06:19:08.775395" level="INFO">After Each Test Suites</msg>
+<arg>After Each Test Suites</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-30T06:19:08.774804" elapsed="0.000591"/>
+</kw>
+<status status="PASS" start="2024-10-30T06:19:08.773806" elapsed="0.001589"/>
+</kw>
+<status status="FAIL" start="2024-10-30T06:13:25.228449" elapsed="343.546946"/>
+</suite>
+<kw name="After Each Test Suite" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-30T06:19:08.783007" level="INFO">Test Suite Ended</msg>
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-30T06:19:08.782096" elapsed="0.000911"/>
+</kw>
+<status status="PASS" start="2024-10-30T06:19:08.781481" elapsed="0.002521"/>
+</kw>
+<status status="FAIL" start="2024-10-30T06:13:25.225456" elapsed="343.558546"/>
+</suite>
+<status status="FAIL" start="2024-10-30T06:13:25.184566" elapsed="343.603952"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">ALL_TC</stat>
+<stat pass="0" fail="1" skip="0">sanity</stat>
+<stat pass="0" fail="2" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="LoginTC">TestCases.LoginTC</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1" name="StartBrowser">TestCases.LoginTC.StartBrowser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-30T06:18:57.607801" level="WARN">There was an error managing chromedriver (error decoding response body); using driver found in the cache</msg>
+<msg time="2024-10-30T06:19:04.231392" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+</errors>
+</robot>

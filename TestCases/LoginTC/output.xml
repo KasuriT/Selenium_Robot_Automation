@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-11-11T10:50:04.029216" rpa="false" schemaversion="5">
+<suite id="s1" name="BDDFormat" source="C:\Users\lenovo\PycharmProjects\UdemyQAPractise\TestCases\LoginTC\BDDFormat.robot">
+<test id="s1-t1" name="Test Case in BDD Format" line="8">
+<kw name="Given">
+<msg time="2024-11-11T10:50:04.483890" level="FAIL">No keyword with name 'Given' found.</msg>
+<arg>Start and Maximize Browsers</arg>
+<status status="FAIL" start="2024-11-11T10:50:04.483890" elapsed="0.000000">No keyword with name 'Given' found.</status>
+</kw>
+<kw name="When">
+<arg>Close Browser Window</arg>
+<status status="NOT RUN" start="2024-11-11T10:50:04.483890" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-11T10:50:04.480899" elapsed="0.003988">No keyword with name 'Given' found.</status>
+</test>
+<status status="FAIL" start="2024-11-11T10:50:04.031319" elapsed="0.454566"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="BDDFormat">BDDFormat</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-11T10:50:04.477907" level="ERROR">Error in file 'C:\Users\lenovo\PycharmProjects\UdemyQAPractise\Resources\Resources.robot' on line 3: Importing library 'C:\Users\lenovo\PycharmProjects\UdemyQAPractise\ExternalKeywords\UserKeywords.py' failed: NameError: name 'Keyword' is not defined
+Traceback (most recent call last):
+  File "C:\Users\lenovo\PycharmProjects\UdemyQAPractise\ExternalKeywords\UserKeywords.py", line 4, in &lt;module&gt;
+    @Keyword("Create Folder at Runtime")
+     ^^^^^^^
+PYTHONPATH:
+  C:\Users\lenovo\PycharmProjects\UdemyQAPractise\ExternalKeywords
+  C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Scripts\robot.exe
+  C:\Users\lenovo\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\lenovo\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\lenovo\AppData\Local\Programs\Python\Python312
+  C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages
+  C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>
